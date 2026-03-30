@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RSC Enterprises</title>
+    <style>
+      :root {
+        --bg: #06003c;
+        --text: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+      }
+
+      .page {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        padding: clamp(20px, 5vh, 48px) 24px 28px;
+      }
+
+      .top {
+        margin-top: 2vh;
+      }
+
+      .logo {
+        width: min(460px, 70vw);
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .services {
+        margin-top: clamp(20px, 2.8vh, 28px);
+        font-size: clamp(20px, 2vw, 44px);
+        letter-spacing: 0.01em;
+      }
+
+      .middle {
+        font-size: clamp(18px, 2.7vw, 52px);
+        line-height: 1.35;
+      }
+
+      .footer {
+        font-size: clamp(18px, 2.2vw, 44px);
+        margin-bottom: 1vh;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="top">
+        <img class="logo" src="logo.png" alt="RSC Enterprises logo" />
+        <p class="services">Special Situations | Distressed Assets | Private Capital</p>
+      </section>
+
+      <section class="middle">
+        <div>Pragmatic analysis, data-backed decisions</div>
+        <div>info@rsc-enterprises.it</div>
+      </section>
+
+      <footer class="footer">Italian Operations - RSC Enterprises</footer>
+    </main>
+  </body>
+</html>
